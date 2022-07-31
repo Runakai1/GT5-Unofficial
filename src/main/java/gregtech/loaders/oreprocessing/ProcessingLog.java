@@ -6,7 +6,9 @@ import gregtech.api.enums.*;
 import gregtech.api.util.GT_ModHandler;
 import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Utility;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class ProcessingLog implements gregtech.api.interfaces.IOreRecipeRegistrator {
@@ -29,6 +31,7 @@ public class ProcessingLog implements gregtech.api.interfaces.IOreRecipeRegistra
         GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.stickLong, Materials.Wood, 2L), gregtech.api.util.GT_ModHandler.RecipeBits.DO_NOT_CHECK_FOR_COLLISIONS | gregtech.api.util.GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"sLf", 'L', GT_Utility.copyAmount(1L, aStack)});
         GT_Values.RA.addLatheRecipe(GT_Utility.copyAmount(1L, aStack), GT_OreDictUnificator.get(OrePrefixes.stickLong, Materials.Wood, 4L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Wood, 2L), 160, 8);
         GT_Values.RA.addAssemblerRecipe(GT_Utility.copyAmount(1L, aStack), ItemList.Circuit_Integrated.getWithDamage(0L, 2L), Materials.SeedOil.getFluid(50L), ItemList.FR_Stick.get(1L), 16, 8);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.FR_Tube_Bronze.get(1), Materials.Glass.getBlocks(1), ItemList.FR_Tube_Bronze.get(1), Materials.Glass.getBlocks(1), Materials.Glowstone.getBlocks(1), Materials.Glass.getBlocks(1), ItemList.FR_Tube_Bronze.get(1), Materials.Glass.getBlocks(1), ItemList.FR_Tube_Bronze.get(1)}, Materials.Honey.getFluid(3000l), ItemList.EB_Alveary_Lightning.get(1L), 200, 480);
         GT_Values.RA.addAssemblerRecipe(GT_Utility.copyAmount(8L, aStack), ItemList.Circuit_Integrated.getWithDamage(0L, 8L), Materials.SeedOil.getFluid(250L), ItemList.FR_Casing_Impregnated.get(1L), 64, 16);
         GT_Values.RA.addChemicalBathRecipe(GT_Utility.copyAmount(1L, aStack), Materials.Creosote.getFluid(1000L), GT_ModHandler.getModItem("Railcraft", "tile.railcraft.cube", 1L, 8), null, null, null, 16, 16);
 

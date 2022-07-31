@@ -513,6 +513,21 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler, IG
         ItemList.FR_Casing_Impregnated.set(GT_ModHandler.getModItem(aTextForestry, "impregnatedCasing", 1L));
         ItemList.FR_Casing_Sturdy.set(GT_ModHandler.getModItem(aTextForestry, "sturdyMachine", 1L));
         ItemList.FR_Casing_Hardened.set(GT_ModHandler.getModItem(aTextForestry, "hardenedMachine", 1L));
+        ItemList.EB_Alveary_Lightning.set(GT_ModHandler.getModItem("BinnieCore", "alveary", 1L, 3));
+        ItemList.EB_Alveary_Transmission.set(GT_ModHandler.getModItem("BinnieCore", "alveary", 1L, 6));
+        ItemList.FR_Alveary_Fan.set(GT_ModHandler.getModItem(aTextForestry, "alveary", 1L, 3));
+        ItemList.FR_Alveary_Heater.set(GT_ModHandler.getModItem(aTextForestry, "alveary", 1L, 4));
+        ItemList.FR_Alveary_Hygroregulator.set(GT_ModHandler.getModItem(aTextForestry, "alveary", 1L, 5));
+        ItemList.FR_Alveary_Stabiliser.set(GT_ModHandler.getModItem(aTextForestry, "alveary", 1L, 6));
+        ItemList.FR_Alveary_Sieve.set(GT_ModHandler.getModItem(aTextForestry, "alveary", 1L, 7));
+        ItemList.FR_Tube_Bronze.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 2));
+        ItemList.FR_Tube_Copper.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 0));
+        ItemList.FR_Tube_Lapis.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 11));
+        ItemList.FR_Tube_Blazing.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 7));
+        ItemList.FR_Tube_Obsidian.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 6));
+        ItemList.FR_Tube_Golden.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 4));
+        ItemList.FR_Tube_Emerald.set(GT_ModHandler.getModItem(aTextForestry, "thermionicTubes", 1L, 9));
+
 
         ItemList.Bottle_Empty.set(new ItemStack(Items.glass_bottle, 1));
 
